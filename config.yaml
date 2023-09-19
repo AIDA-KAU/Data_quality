@@ -1,0 +1,40 @@
+# Config file for vacuum pumping parameters -- Data quality
+
+# Consumer configuration
+
+topic: 'order-topic'
+group_id: 'sample-group'
+bootstrap_servers : 'localhost:9092'
+auto_offset_reset: 'earliest'
+
+
+# 1. Domain constraints
+# Minimum value to start pumping
+min_value : 400
+# If negative values are accepted
+min_negative : false
+
+# 2. Null values
+# If null values should be replaced by a certain value, if false no imputation
+replace_null : false
+
+# 3. Anomalies
+# If anomalies should be removed, false means no removal
+remove_anomaly: false
+
+# 4. Drift
+# Drift threshold, false mean no threshold
+drift_threshold: false
+
+# Scoring weight
+# Domain constraints weight
+dcw : 1
+
+# Null values weight
+nvw : 1
+
+# Anomalies weight
+amw : 1
+
+#Drift weight
+dfw : 1

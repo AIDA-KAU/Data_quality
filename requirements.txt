@@ -1,0 +1,10 @@
+pandas~=1.4.0
+yaml~=0.2.5
+pyyaml~=5.4.1
+numpy~=1.19.2
+scikit-learn~=0.24.1
+matplotlib~=3.4.1
+scipy~=1.6.2
+seaborn~=0.11.1
+xgboost~=1.4.1
+densratio~=0.2.2
